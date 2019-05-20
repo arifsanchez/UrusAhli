@@ -501,8 +501,6 @@ return [
         'fields'         => [
             'id'                        => 'ID',
             'id_helper'                 => '',
-            'user'                      => 'Akaun ePerkim',
-            'user_helper'               => '',
             'user_photo'                => 'User Photo',
             'user_photo_helper'         => '',
             'jantina'                   => 'Jantina',
@@ -513,7 +511,7 @@ return [
             'created_at_helper'         => '',
             'updated_at'                => 'Updated At',
             'updated_at_helper'         => '',
-            'deleted_at'                => 'Deleted at',
+            'deleted_at'                => 'Deleted At',
             'deleted_at_helper'         => '',
             'cawangan'                  => 'Cawangan',
             'cawangan_helper'           => '',

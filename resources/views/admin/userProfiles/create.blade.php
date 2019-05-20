@@ -22,19 +22,6 @@
                     </em>
                 @endif
             </div>
-            <div class="form-group {{ $errors->has('user_id') ? 'has-error' : '' }}">
-                <label for="user">{{ trans('global.userProfile.fields.user') }}</label>
-                <select name="user_id" id="user" class="form-control select2">
-                    @foreach($users as $id => $user)
-                        <option value="{{ $id }}" {{ (isset($userProfile) && $userProfile->user ? $userProfile->user->id : old('user_id')) == $id ? 'selected' : '' }}>{{ $user }}</option>
-                    @endforeach
-                </select>
-                @if($errors->has('user_id'))
-                    <em class="invalid-feedback">
-                        {{ $errors->first('user_id') }}
-                    </em>
-                @endif
-            </div>
             <div class="form-group {{ $errors->has('nama_penuh') ? 'has-error' : '' }}">
                 <label for="nama_penuh">{{ trans('global.userProfile.fields.nama_penuh') }}*</label>
                 <input type="text" id="nama_penuh" name="nama_penuh" class="form-control" value="{{ old('nama_penuh', isset($userProfile) ? $userProfile->nama_penuh : '') }}">
@@ -185,8 +172,8 @@
         </form>
     </div>
 </div>
-
 @endsection
+
 @section('scripts')
 <script>
     Dropzone.options.userPhotoDropzone = {
