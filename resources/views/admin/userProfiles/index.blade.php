@@ -26,9 +26,6 @@
                             {{ trans('global.userProfile.fields.cawangan') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.user') }}
-                        </th>
-                        <th>
                             {{ trans('global.userProfile.fields.nama_penuh') }}
                         </th>
                         <th>
@@ -74,9 +71,6 @@
                             </td>
                             <td>
                                 {{ $userProfile->cawangan->nama ?? '' }}
-                            </td>
-                            <td>
-                                {{ $userProfile->user->name ?? '' }}
                             </td>
                             <td>
                                 {{ $userProfile->nama_penuh ?? '' }}
@@ -142,6 +136,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -181,5 +176,4 @@
 })
 
 </script>
-@endsection
 @endsection

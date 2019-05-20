@@ -8,7 +8,6 @@ use App\Http\Controllers\Traits\MediaUploadingTrait;
 use App\Http\Requests\MassDestroyUserProfileRequest;
 use App\Http\Requests\StoreUserProfileRequest;
 use App\Http\Requests\UpdateUserProfileRequest;
-use App\User;
 use App\UserProfile;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
@@ -32,9 +31,7 @@ class UserProfileController extends Controller
 
         $cawangans = Cawangan::all()->pluck('nama', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $users = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
-
-        return view('admin.userProfiles.create', compact('cawangans', 'users'));
+        return view('admin.userProfiles.create', compact('cawangans'));
     }
 
     public function store(StoreUserProfileRequest $request)
@@ -56,11 +53,9 @@ class UserProfileController extends Controller
 
         $cawangans = Cawangan::all()->pluck('nama', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $users = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $userProfile->load('cawangan');
 
-        $userProfile->load('cawangan', 'user');
-
-        return view('admin.userProfiles.edit', compact('cawangans', 'users', 'userProfile'));
+        return view('admin.userProfiles.edit', compact('cawangans', 'userProfile'));
     }
 
     public function update(UpdateUserProfileRequest $request, UserProfile $userProfile)
@@ -84,7 +79,7 @@ class UserProfileController extends Controller
     {
         abort_unless(\Gate::allows('user_profile_show'), 403);
 
-        $userProfile->load('cawangan', 'user');
+        $userProfile->load('cawangan');
 
         return view('admin.userProfiles.show', compact('userProfile'));
     }

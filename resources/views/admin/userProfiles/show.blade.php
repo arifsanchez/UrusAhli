@@ -20,14 +20,6 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.user') }}
-                        </th>
-                        <td>
-                            {{ $userProfile->user->name ?? '' }}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
                             {{ trans('global.userProfile.fields.nama_penuh') }}
                         </th>
                         <td>
@@ -119,5 +111,4 @@
         </div>
     </div>
 </div>
-
 @endsection

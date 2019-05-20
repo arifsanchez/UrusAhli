@@ -51,7 +51,6 @@ class UserProfile extends Model implements HasMedia
         'no_kp',
         'bangsa',
         'alamat',
-        'user_id',
         'jantina',
         'pekerjaan',
         'nama_penuh',
@@ -68,11 +67,6 @@ class UserProfile extends Model implements HasMedia
     public function cawangan()
     {
         return $this->belongsTo(Cawangan::class, 'cawangan_id');
-    }
-
-    public function user()
-    {
-        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function getuserPhotoAttribute()
