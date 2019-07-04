@@ -10,7 +10,7 @@
                         <h1>
                             <div class="login-logo">
                                 <a href="#">
-                                    {{ trans('global.site_title') }}
+                                    {{ trans('panel.site_title') }}
                                 </a>
                             </div>
                         </h1>
@@ -18,7 +18,7 @@
                         <div>
                             {{ csrf_field() }}
                             <div class="form-group has-feedback">
-                                <input type="email" name="email" class="form-control" required="required"="autofocus" placeholder="{{ trans('global.login_email') }}">
+                                <input type="email" name="email" class="form-control" required="autofocus" placeholder="{{ trans('global.login_email') }}">
                                 @if($errors->has('email'))
                                     <em class="invalid-feedback">
                                         {{ $errors->first('email') }}

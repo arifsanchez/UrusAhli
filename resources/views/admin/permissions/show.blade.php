@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.permission.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.permission.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.permission.fields.title') }}
+                            {{ trans('cruds.permission.fields.title') }}
                         </th>
                         <td>
                             {{ $permission->title }}
@@ -26,5 +26,4 @@
         </div>
     </div>
 </div>
-
 @endsection

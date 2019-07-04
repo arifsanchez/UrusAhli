@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.bahagian.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.bahagian.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.bahagian.fields.nama') }}
+                            {{ trans('cruds.bahagian.fields.nama') }}
                         </th>
                         <td>
                             {{ $bahagian->nama }}
@@ -26,5 +26,4 @@
         </div>
     </div>
 </div>
-
 @endsection

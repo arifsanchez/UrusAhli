@@ -3,22 +3,22 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('global.bahagian.title_singular') }}
+        {{ trans('global.create') }} {{ trans('cruds.bahagian.title_singular') }}
     </div>
 
     <div class="card-body">
         <form action="{{ route("admin.bahagians.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('nama') ? 'has-error' : '' }}">
-                <label for="nama">{{ trans('global.bahagian.fields.nama') }}*</label>
-                <input type="text" id="nama" name="nama" class="form-control" value="{{ old('nama', isset($bahagian) ? $bahagian->nama : '') }}">
+                <label for="nama">{{ trans('cruds.bahagian.fields.nama') }}*</label>
+                <input type="text" id="nama" name="nama" class="form-control" value="{{ old('nama', isset($bahagian) ? $bahagian->nama : '') }}" required>
                 @if($errors->has('nama'))
                     <em class="invalid-feedback">
                         {{ $errors->first('nama') }}
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.bahagian.fields.nama_helper') }}
+                    {{ trans('cruds.bahagian.fields.nama_helper') }}
                 </p>
             </div>
             <div>
@@ -27,5 +27,4 @@
         </form>
     </div>
 </div>
-
 @endsection

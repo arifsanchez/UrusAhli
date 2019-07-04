@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.aktiviti.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.aktiviti.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.aktiviti.fields.bahagian') }}
+                            {{ trans('cruds.aktiviti.fields.bahagian') }}
                         </th>
                         <td>
                             {{ $aktiviti->bahagian->nama ?? '' }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.aktiviti.fields.nama') }}
+                            {{ trans('cruds.aktiviti.fields.nama') }}
                         </th>
                         <td>
                             {{ $aktiviti->nama }}
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.aktiviti.fields.aturcara') }}
+                            {{ trans('cruds.aktiviti.fields.aturcara') }}
                         </th>
                         <td>
                             {!! $aktiviti->aturcara !!}
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.aktiviti.fields.jemputan_oleh') }}
+                            {{ trans('cruds.aktiviti.fields.jemputan_oleh') }}
                         </th>
                         <td>
                             {{ $aktiviti->jemputan_oleh->name ?? '' }}
@@ -44,7 +44,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.aktiviti.fields.tarikh_mula') }}
+                            {{ trans('cruds.aktiviti.fields.tarikh_mula') }}
                         </th>
                         <td>
                             {{ $aktiviti->tarikh_mula }}
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.aktiviti.fields.tarikh_akhir') }}
+                            {{ trans('cruds.aktiviti.fields.tarikh_akhir') }}
                         </th>
                         <td>
                             {{ $aktiviti->tarikh_akhir }}
@@ -66,5 +66,4 @@
         </div>
     </div>
 </div>
-
 @endsection

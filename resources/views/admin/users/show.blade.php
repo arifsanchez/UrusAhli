@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.user.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.user.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.user.fields.name') }}
+                            {{ trans('cruds.user.fields.name') }}
                         </th>
                         <td>
                             {{ $user->name }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.user.fields.email') }}
+                            {{ trans('cruds.user.fields.email') }}
                         </th>
                         <td>
                             {{ $user->email }}
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.user.fields.email_verified_at') }}
+                            {{ trans('cruds.user.fields.email_verified_at') }}
                         </th>
                         <td>
                             {{ $user->email_verified_at }}
@@ -52,5 +52,4 @@
         </div>
     </div>
 </div>
-
 @endsection

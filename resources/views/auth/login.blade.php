@@ -15,7 +15,7 @@
                         <h1>
                             <div class="login-logo">
                                 <a href="#">
-                                    {{ trans('global.site_title') }}
+                                    {{ trans('panel.site_title') }}
                                 </a>
                             </div>
                         </h1>

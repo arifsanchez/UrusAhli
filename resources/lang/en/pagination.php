@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'previous'   => '&laquo; Previous',
-    'next'       => 'Next &raquo;',
-    'site_title' => 'UrusAhli',
+    'previous' => '&laquo; Previous',
+    'next'     => 'Next &raquo;',
 ];

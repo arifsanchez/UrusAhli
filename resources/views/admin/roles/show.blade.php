@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.role.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.role.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.role.fields.title') }}
+                            {{ trans('cruds.role.fields.title') }}
                         </th>
                         <td>
                             {{ $role->title }}
@@ -36,5 +36,4 @@
         </div>
     </div>
 </div>
-
 @endsection

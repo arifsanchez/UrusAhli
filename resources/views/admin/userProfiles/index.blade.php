@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.user-profiles.create") }}">
-                {{ trans('global.add') }} {{ trans('global.userProfile.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.userProfile.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.userProfile.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.userProfile.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,40 +23,49 @@
 
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.cawangan') }}
+                            {{ trans('cruds.userProfile.fields.cawangan') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.nama_penuh') }}
+                            {{ trans('cruds.userProfile.fields.nama_penuh') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.user_photo') }}
+                            {{ trans('cruds.userProfile.fields.user_photo') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.no_kp') }}
+                            {{ trans('cruds.userProfile.fields.no_kp') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.jantina') }}
+                            {{ trans('cruds.userProfile.fields.jantina') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.bangsa') }}
+                            {{ trans('cruds.userProfile.fields.bangsa') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.status_perkahwinan') }}
+                            {{ trans('cruds.userProfile.fields.status_perkahwinan') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.pekerjaan') }}
+                            {{ trans('cruds.userProfile.fields.pekerjaan') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.alamat') }}
+                            {{ trans('cruds.userProfile.fields.alamat') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.phone_number') }}
+                            {{ trans('cruds.userProfile.fields.phone_number') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.jenis_keahlian') }}
+                            {{ trans('cruds.userProfile.fields.jenis_keahlian') }}
                         </th>
                         <th>
-                            {{ trans('global.userProfile.fields.status_keahlian') }}
+                            {{ trans('cruds.userProfile.fields.status_keahlian') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.userProfile.fields.no_ahli_cwg') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.userProfile.fields.no_ahli_bhg') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.userProfile.fields.tarikh_kelulusan') }}
                         </th>
                         <th>
                             &nbsp;
@@ -108,6 +117,15 @@
                             </td>
                             <td>
                                 {{ App\UserProfile::STATUS_KEAHLIAN_SELECT[$userProfile->status_keahlian] ?? '' }}
+                            </td>
+                            <td>
+                                {{ $userProfile->no_ahli_cwg ?? '' }}
+                            </td>
+                            <td>
+                                {{ $userProfile->no_ahli_bhg ?? '' }}
+                            </td>
+                            <td>
+                                {{ $userProfile->tarikh_kelulusan ?? '' }}
                             </td>
                             <td>
                                 @can('user_profile_show')

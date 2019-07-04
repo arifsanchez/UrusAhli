@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.auditLog.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.auditLog.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.id') }}
+                            {{ trans('cruds.auditLog.fields.id') }}
                         </th>
                         <td>
                             {{ $auditLog->id }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.description') }}
+                            {{ trans('cruds.auditLog.fields.description') }}
                         </th>
                         <td>
                             {{ $auditLog->description }}
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.subject_id') }}
+                            {{ trans('cruds.auditLog.fields.subject_id') }}
                         </th>
                         <td>
                             {{ $auditLog->subject_id }}
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.subject_type') }}
+                            {{ trans('cruds.auditLog.fields.subject_type') }}
                         </th>
                         <td>
                             {{ $auditLog->subject_type }}
@@ -44,7 +44,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.user_id') }}
+                            {{ trans('cruds.auditLog.fields.user_id') }}
                         </th>
                         <td>
                             {{ $auditLog->user_id }}
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.properties') }}
+                            {{ trans('cruds.auditLog.fields.properties') }}
                         </th>
                         <td>
                             {!! $auditLog->properties !!}
@@ -60,7 +60,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.host') }}
+                            {{ trans('cruds.auditLog.fields.host') }}
                         </th>
                         <td>
                             {{ $auditLog->host }}
@@ -68,7 +68,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.auditLog.fields.created_at') }}
+                            {{ trans('cruds.auditLog.fields.created_at') }}
                         </th>
                         <td>
                             {{ $auditLog->created_at }}
@@ -82,5 +82,4 @@
         </div>
     </div>
 </div>
-
 @endsection

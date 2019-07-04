@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.userProfile.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.userProfile.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.cawangan') }}
+                            {{ trans('cruds.userProfile.fields.cawangan') }}
                         </th>
                         <td>
                             {{ $userProfile->cawangan->nama ?? '' }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.nama_penuh') }}
+                            {{ trans('cruds.userProfile.fields.nama_penuh') }}
                         </th>
                         <td>
                             {{ $userProfile->nama_penuh }}
@@ -28,12 +28,12 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.user_photo') }}
+                            {{ trans('cruds.userProfile.fields.user_photo') }}
                         </th>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.no_kp') }}
+                            {{ trans('cruds.userProfile.fields.no_kp') }}
                         </th>
                         <td>
                             {{ $userProfile->no_kp }}
@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.jantina') }}
+                            {{ trans('cruds.userProfile.fields.jantina') }}
                         </th>
                         <td>
                             {{ App\UserProfile::JANTINA_RADIO[$userProfile->jantina] }}
@@ -49,7 +49,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.bangsa') }}
+                            {{ trans('cruds.userProfile.fields.bangsa') }}
                         </th>
                         <td>
                             {{ App\UserProfile::BANGSA_SELECT[$userProfile->bangsa] }}
@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.status_perkahwinan') }}
+                            {{ trans('cruds.userProfile.fields.status_perkahwinan') }}
                         </th>
                         <td>
                             {{ App\UserProfile::STATUS_PERKAHWINAN_RADIO[$userProfile->status_perkahwinan] }}
@@ -65,7 +65,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.pekerjaan') }}
+                            {{ trans('cruds.userProfile.fields.pekerjaan') }}
                         </th>
                         <td>
                             {{ $userProfile->pekerjaan }}
@@ -73,7 +73,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.alamat') }}
+                            {{ trans('cruds.userProfile.fields.alamat') }}
                         </th>
                         <td>
                             {!! $userProfile->alamat !!}
@@ -81,7 +81,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.phone_number') }}
+                            {{ trans('cruds.userProfile.fields.phone_number') }}
                         </th>
                         <td>
                             {{ $userProfile->phone_number }}
@@ -89,7 +89,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.jenis_keahlian') }}
+                            {{ trans('cruds.userProfile.fields.jenis_keahlian') }}
                         </th>
                         <td>
                             {{ App\UserProfile::JENIS_KEAHLIAN_SELECT[$userProfile->jenis_keahlian] }}
@@ -97,10 +97,34 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.userProfile.fields.status_keahlian') }}
+                            {{ trans('cruds.userProfile.fields.status_keahlian') }}
                         </th>
                         <td>
                             {{ App\UserProfile::STATUS_KEAHLIAN_SELECT[$userProfile->status_keahlian] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.userProfile.fields.no_ahli_cwg') }}
+                        </th>
+                        <td>
+                            {{ $userProfile->no_ahli_cwg }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.userProfile.fields.no_ahli_bhg') }}
+                        </th>
+                        <td>
+                            {{ $userProfile->no_ahli_bhg }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.userProfile.fields.tarikh_kelulusan') }}
+                        </th>
+                        <td>
+                            {{ $userProfile->tarikh_kelulusan }}
                         </td>
                     </tr>
                 </tbody>
