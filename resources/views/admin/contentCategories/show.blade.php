@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.contentCategory.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.contentCategory.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.contentCategory.fields.name') }}
+                            {{ trans('cruds.contentCategory.fields.name') }}
                         </th>
                         <td>
                             {{ $contentCategory->name }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.contentCategory.fields.slug') }}
+                            {{ trans('cruds.contentCategory.fields.slug') }}
                         </th>
                         <td>
                             {{ $contentCategory->slug }}
@@ -34,5 +34,4 @@
         </div>
     </div>
 </div>
-
 @endsection

@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.cawangans.create") }}">
-                {{ trans('global.add') }} {{ trans('global.cawangan.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.cawangan.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.cawangan.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.cawangan.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,10 +23,10 @@
 
                         </th>
                         <th>
-                            {{ trans('global.cawangan.fields.bahagian') }}
+                            {{ trans('cruds.cawangan.fields.bahagian') }}
                         </th>
                         <th>
-                            {{ trans('global.cawangan.fields.nama') }}
+                            {{ trans('cruds.cawangan.fields.nama') }}
                         </th>
                         <th>
                             &nbsp;
@@ -72,6 +72,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -111,5 +112,4 @@
 })
 
 </script>
-@endsection
 @endsection

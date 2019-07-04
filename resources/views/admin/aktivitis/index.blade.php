@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.aktivitis.create") }}">
-                {{ trans('global.add') }} {{ trans('global.aktiviti.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.aktiviti.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.aktiviti.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.aktiviti.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,19 +23,19 @@
 
                         </th>
                         <th>
-                            {{ trans('global.aktiviti.fields.bahagian') }}
+                            {{ trans('cruds.aktiviti.fields.bahagian') }}
                         </th>
                         <th>
-                            {{ trans('global.aktiviti.fields.nama') }}
+                            {{ trans('cruds.aktiviti.fields.nama') }}
                         </th>
                         <th>
-                            {{ trans('global.aktiviti.fields.jemputan_oleh') }}
+                            {{ trans('cruds.aktiviti.fields.jemputan_oleh') }}
                         </th>
                         <th>
-                            {{ trans('global.aktiviti.fields.tarikh_mula') }}
+                            {{ trans('cruds.aktiviti.fields.tarikh_mula') }}
                         </th>
                         <th>
-                            {{ trans('global.aktiviti.fields.tarikh_akhir') }}
+                            {{ trans('cruds.aktiviti.fields.tarikh_akhir') }}
                         </th>
                         <th>
                             &nbsp;
@@ -90,6 +90,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -129,5 +130,4 @@
 })
 
 </script>
-@endsection
 @endsection

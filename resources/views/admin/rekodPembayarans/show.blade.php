@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.rekodPembayaran.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.rekodPembayaran.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.ahli') }}
+                            {{ trans('cruds.rekodPembayaran.fields.ahli') }}
                         </th>
                         <td>
                             {{ $rekodPembayaran->ahli->nama_penuh ?? '' }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.tujuan_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.tujuan_pembayaran') }}
                         </th>
                         <td>
                             {{ App\RekodPembayaran::TUJUAN_PEMBAYARAN_SELECT[$rekodPembayaran->tujuan_pembayaran] }}
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.jenis_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.jenis_pembayaran') }}
                         </th>
                         <td>
                             {{ App\RekodPembayaran::JENIS_PEMBAYARAN_SELECT[$rekodPembayaran->jenis_pembayaran] }}
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.jumlah_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.jumlah_pembayaran') }}
                         </th>
                         <td>
                             ${{ $rekodPembayaran->jumlah_pembayaran }}
@@ -44,7 +44,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.bukti_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.bukti_pembayaran') }}
                         </th>
                         <td>
                             {{ $rekodPembayaran->bukti_pembayaran }}
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.diterima_oleh') }}
+                            {{ trans('cruds.rekodPembayaran.fields.diterima_oleh') }}
                         </th>
                         <td>
                             {{ $rekodPembayaran->diterima_oleh->name ?? '' }}
@@ -60,7 +60,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.tarikh_transaksi') }}
+                            {{ trans('cruds.rekodPembayaran.fields.tarikh_transaksi') }}
                         </th>
                         <td>
                             {{ $rekodPembayaran->tarikh_transaksi }}
@@ -68,7 +68,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.status_transaksi') }}
+                            {{ trans('cruds.rekodPembayaran.fields.status_transaksi') }}
                         </th>
                         <td>
                             {{ App\RekodPembayaran::STATUS_TRANSAKSI_SELECT[$rekodPembayaran->status_transaksi] }}
@@ -82,5 +82,4 @@
         </div>
     </div>
 </div>
-
 @endsection

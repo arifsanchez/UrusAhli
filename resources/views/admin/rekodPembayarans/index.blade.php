@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.rekod-pembayarans.create") }}">
-                {{ trans('global.add') }} {{ trans('global.rekodPembayaran.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.rekodPembayaran.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.rekodPembayaran.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.rekodPembayaran.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,28 +23,28 @@
 
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.ahli') }}
+                            {{ trans('cruds.rekodPembayaran.fields.ahli') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.tujuan_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.tujuan_pembayaran') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.jenis_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.jenis_pembayaran') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.jumlah_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.jumlah_pembayaran') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.bukti_pembayaran') }}
+                            {{ trans('cruds.rekodPembayaran.fields.bukti_pembayaran') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.diterima_oleh') }}
+                            {{ trans('cruds.rekodPembayaran.fields.diterima_oleh') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.tarikh_transaksi') }}
+                            {{ trans('cruds.rekodPembayaran.fields.tarikh_transaksi') }}
                         </th>
                         <th>
-                            {{ trans('global.rekodPembayaran.fields.status_transaksi') }}
+                            {{ trans('cruds.rekodPembayaran.fields.status_transaksi') }}
                         </th>
                         <th>
                             &nbsp;
@@ -114,6 +114,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -153,5 +154,4 @@
 })
 
 </script>
-@endsection
 @endsection

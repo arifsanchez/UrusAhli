@@ -10,7 +10,9 @@ class MassDestroyUserProfileRequest extends FormRequest
 {
     public function authorize()
     {
-        return abort_if(Gate::denies('user_profile_delete'), 403, '403 Forbidden') ?? true;
+        abort_if(Gate::denies('user_profile_delete'), 403, '403 Forbidden');
+
+        return true;
     }
 
     public function rules()

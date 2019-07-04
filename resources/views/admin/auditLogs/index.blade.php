@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.audit-logs.create") }}">
-                {{ trans('global.add') }} {{ trans('global.auditLog.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.auditLog.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.auditLog.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.auditLog.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,25 +23,25 @@
 
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.id') }}
+                            {{ trans('cruds.auditLog.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.description') }}
+                            {{ trans('cruds.auditLog.fields.description') }}
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.subject_id') }}
+                            {{ trans('cruds.auditLog.fields.subject_id') }}
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.subject_type') }}
+                            {{ trans('cruds.auditLog.fields.subject_type') }}
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.user_id') }}
+                            {{ trans('cruds.auditLog.fields.user_id') }}
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.host') }}
+                            {{ trans('cruds.auditLog.fields.host') }}
                         </th>
                         <th>
-                            {{ trans('global.auditLog.fields.created_at') }}
+                            {{ trans('cruds.auditLog.fields.created_at') }}
                         </th>
                         <th>
                             &nbsp;
@@ -102,6 +102,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -141,5 +142,4 @@
 })
 
 </script>
-@endsection
 @endsection

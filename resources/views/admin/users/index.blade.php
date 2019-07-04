@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.users.create") }}">
-                {{ trans('global.add') }} {{ trans('global.user.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.user.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.user.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.user.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,19 +23,19 @@
 
                         </th>
                         <th>
-                            {{ trans('global.user.fields.name') }}
+                            {{ trans('cruds.user.fields.name') }}
                         </th>
                         <th>
-                            {{ trans('global.user.fields.email') }}
+                            {{ trans('cruds.user.fields.email') }}
                         </th>
                         <th>
-                            {{ trans('global.user.fields.email_verified_at') }}
+                            {{ trans('cruds.user.fields.email_verified_at') }}
                         </th>
                         <th>
-                            {{ trans('global.user.fields.approved') }}
+                            {{ trans('cruds.user.fields.approved') }}
                         </th>
                         <th>
-                            {{ trans('global.user.fields.roles') }}
+                            {{ trans('cruds.user.fields.roles') }}
                         </th>
                         <th>
                             &nbsp;
@@ -92,6 +92,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -131,5 +132,4 @@
 })
 
 </script>
-@endsection
 @endsection

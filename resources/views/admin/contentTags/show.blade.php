@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.contentTag.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.contentTag.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.contentTag.fields.name') }}
+                            {{ trans('cruds.contentTag.fields.name') }}
                         </th>
                         <td>
                             {{ $contentTag->name }}
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.contentTag.fields.slug') }}
+                            {{ trans('cruds.contentTag.fields.slug') }}
                         </th>
                         <td>
                             {{ $contentTag->slug }}
@@ -34,5 +34,4 @@
         </div>
     </div>
 </div>
-
 @endsection

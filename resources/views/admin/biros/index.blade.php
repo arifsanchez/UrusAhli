@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.biros.create") }}">
-                {{ trans('global.add') }} {{ trans('global.biro.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.biro.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.biro.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.biro.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,10 +23,10 @@
 
                         </th>
                         <th>
-                            {{ trans('global.biro.fields.bahagian') }}
+                            {{ trans('cruds.biro.fields.bahagian') }}
                         </th>
                         <th>
-                            {{ trans('global.biro.fields.nama') }}
+                            {{ trans('cruds.biro.fields.nama') }}
                         </th>
                         <th>
                             &nbsp;
@@ -74,6 +74,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -113,5 +114,4 @@
 })
 
 </script>
-@endsection
 @endsection

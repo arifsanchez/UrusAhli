@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('global.contentPage.title') }}
+        {{ trans('global.show') }} {{ trans('cruds.contentPage.title') }}
     </div>
 
     <div class="card-body">
@@ -12,7 +12,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            {{ trans('global.contentPage.fields.title') }}
+                            {{ trans('cruds.contentPage.fields.title') }}
                         </th>
                         <td>
                             {{ $contentPage->title }}
@@ -40,7 +40,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.contentPage.fields.page_text') }}
+                            {{ trans('cruds.contentPage.fields.page_text') }}
                         </th>
                         <td>
                             {!! $contentPage->page_text !!}
@@ -48,7 +48,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.contentPage.fields.excerpt') }}
+                            {{ trans('cruds.contentPage.fields.excerpt') }}
                         </th>
                         <td>
                             {!! $contentPage->excerpt !!}
@@ -56,7 +56,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('global.contentPage.fields.featured_image') }}
+                            {{ trans('cruds.contentPage.fields.featured_image') }}
                         </th>
                     </tr>
                 </tbody>
@@ -67,5 +67,4 @@
         </div>
     </div>
 </div>
-
 @endsection

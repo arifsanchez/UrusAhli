@@ -15,12 +15,16 @@ class UpdateUserProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            'cawangan_id' => [
+            'cawangan_id'      => [
                 'required',
                 'integer',
             ],
-            'nama_penuh'  => [
+            'nama_penuh'       => [
                 'required',
+            ],
+            'tarikh_kelulusan' => [
+                'date_format:' . config('panel.date_format'),
+                'nullable',
             ],
         ];
     }

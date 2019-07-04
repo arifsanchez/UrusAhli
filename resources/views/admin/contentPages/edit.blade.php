@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.edit') }} {{ trans('global.contentPage.title_singular') }}
+        {{ trans('global.edit') }} {{ trans('cruds.contentPage.title_singular') }}
     </div>
 
     <div class="card-body">
@@ -11,19 +11,19 @@
             @csrf
             @method('PUT')
             <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
-                <label for="title">{{ trans('global.contentPage.fields.title') }}*</label>
-                <input type="text" id="title" name="title" class="form-control" value="{{ old('title', isset($contentPage) ? $contentPage->title : '') }}">
+                <label for="title">{{ trans('cruds.contentPage.fields.title') }}*</label>
+                <input type="text" id="title" name="title" class="form-control" value="{{ old('title', isset($contentPage) ? $contentPage->title : '') }}" required>
                 @if($errors->has('title'))
                     <em class="invalid-feedback">
                         {{ $errors->first('title') }}
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.contentPage.fields.title_helper') }}
+                    {{ trans('cruds.contentPage.fields.title_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('categories') ? 'has-error' : '' }}">
-                <label for="category">{{ trans('global.contentPage.fields.category') }}
+                <label for="category">{{ trans('cruds.contentPage.fields.category') }}
                     <span class="btn btn-info btn-xs select-all">Select all</span>
                     <span class="btn btn-info btn-xs deselect-all">Deselect all</span></label>
                 <select name="categories[]" id="categories" class="form-control select2" multiple="multiple">
@@ -37,11 +37,11 @@
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.contentPage.fields.category_helper') }}
+                    {{ trans('cruds.contentPage.fields.category_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('tags') ? 'has-error' : '' }}">
-                <label for="tag">{{ trans('global.contentPage.fields.tag') }}
+                <label for="tag">{{ trans('cruds.contentPage.fields.tag') }}
                     <span class="btn btn-info btn-xs select-all">Select all</span>
                     <span class="btn btn-info btn-xs deselect-all">Deselect all</span></label>
                 <select name="tags[]" id="tags" class="form-control select2" multiple="multiple">
@@ -55,11 +55,11 @@
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.contentPage.fields.tag_helper') }}
+                    {{ trans('cruds.contentPage.fields.tag_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('page_text') ? 'has-error' : '' }}">
-                <label for="page_text">{{ trans('global.contentPage.fields.page_text') }}</label>
+                <label for="page_text">{{ trans('cruds.contentPage.fields.page_text') }}</label>
                 <textarea id="page_text" name="page_text" class="form-control ckeditor">{{ old('page_text', isset($contentPage) ? $contentPage->page_text : '') }}</textarea>
                 @if($errors->has('page_text'))
                     <em class="invalid-feedback">
@@ -67,11 +67,11 @@
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.contentPage.fields.page_text_helper') }}
+                    {{ trans('cruds.contentPage.fields.page_text_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('excerpt') ? 'has-error' : '' }}">
-                <label for="excerpt">{{ trans('global.contentPage.fields.excerpt') }}</label>
+                <label for="excerpt">{{ trans('cruds.contentPage.fields.excerpt') }}</label>
                 <textarea id="excerpt" name="excerpt" class="form-control ">{{ old('excerpt', isset($contentPage) ? $contentPage->excerpt : '') }}</textarea>
                 @if($errors->has('excerpt'))
                     <em class="invalid-feedback">
@@ -79,11 +79,11 @@
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.contentPage.fields.excerpt_helper') }}
+                    {{ trans('cruds.contentPage.fields.excerpt_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('featured_image') ? 'has-error' : '' }}">
-                <label for="featured_image">{{ trans('global.contentPage.fields.featured_image') }}</label>
+                <label for="featured_image">{{ trans('cruds.contentPage.fields.featured_image') }}</label>
                 <div class="needsclick dropzone" id="featured_image-dropzone">
 
                 </div>
@@ -93,7 +93,7 @@
                     </em>
                 @endif
                 <p class="helper-block">
-                    {{ trans('global.contentPage.fields.featured_image_helper') }}
+                    {{ trans('cruds.contentPage.fields.featured_image_helper') }}
                 </p>
             </div>
             <div>
@@ -102,8 +102,8 @@
         </form>
     </div>
 </div>
-
 @endsection
+
 @section('scripts')
 <script>
     Dropzone.options.featuredImageDropzone = {

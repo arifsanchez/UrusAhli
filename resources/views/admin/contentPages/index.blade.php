@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.content-pages.create") }}">
-                {{ trans('global.add') }} {{ trans('global.contentPage.title_singular') }}
+                {{ trans('global.add') }} {{ trans('cruds.contentPage.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.contentPage.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.contentPage.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
@@ -23,19 +23,19 @@
 
                         </th>
                         <th>
-                            {{ trans('global.contentPage.fields.title') }}
+                            {{ trans('cruds.contentPage.fields.title') }}
                         </th>
                         <th>
-                            {{ trans('global.contentPage.fields.category') }}
+                            {{ trans('cruds.contentPage.fields.category') }}
                         </th>
                         <th>
-                            {{ trans('global.contentPage.fields.tag') }}
+                            {{ trans('cruds.contentPage.fields.tag') }}
                         </th>
                         <th>
-                            {{ trans('global.contentPage.fields.excerpt') }}
+                            {{ trans('cruds.contentPage.fields.excerpt') }}
                         </th>
                         <th>
-                            {{ trans('global.contentPage.fields.featured_image') }}
+                            {{ trans('cruds.contentPage.fields.featured_image') }}
                         </th>
                         <th>
                             &nbsp;
@@ -98,6 +98,7 @@
         </div>
     </div>
 </div>
+@endsection
 @section('scripts')
 @parent
 <script>
@@ -137,5 +138,4 @@
 })
 
 </script>
-@endsection
 @endsection
